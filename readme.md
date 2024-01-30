@@ -1,3 +1,6 @@
+# Solution by Mike Bloch-Levermore
+interactivephilosophy@gmail.com
+
 # Brown Rabbit
 
 This is the job test if you wish to be a web developer at Twentyfour

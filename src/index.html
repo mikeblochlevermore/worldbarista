@@ -1,36 +1,168 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Brown rabbit test Bjørn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Barista Cup</title>
         <link rel="stylesheet" href="css/main.css" type="text/css" >
     </head>
     <body>
-        <div class="wrapper">
+        <nav>
             <img src="assets/logo-white.svg" alt="World Barista Cup" class="logo-image"/>
-            <h1 id="headline">
-            </h1>
-            <div class="searchbarWIcons">
-                <input type="text" name="searchbar" placeholder="Search">
-                <img src="assets/icons/linkedin-white.svg" alt="Linkedin"  />
-                <img src="assets/icons/twitter-white.svg" alt="Twitter"  />
-                <img src="assets/icons/instagram-white.svg" alt="Instagram"  />
-                <img src="assets/icons/facebook-white.svg" alt="Facebook"  />
+            <div>
+                <div id="mobileIcons">
+                    <img id="mobile_search_icon" src="assets/icons/search.svg" alt="Search" onclick="toggleMobileSearch()"/>
+                    <img id="menu_button" src="assets/icons/coffee-beans-svgrepo-com.svg" style="filter: invert(100%)" alt="Menu" class="menu_beans" onclick="toggleMenu()"/>
+                </div>
+                <div class="searchbarWIcons">
+                    <div id="searchbar">
+                        <img src="assets/icons/search.svg" alt="Search"/>
+                        <input type="text" name="searchbar" placeholder="search" oninput="handleSearch(this.value, 'desktop')">
+                    </div>
+                    <div id="search_results_desktop">
+                        <!-- Search results populated here -->
+                    </div>
+                    <!-- Social icons -->
+                        <a href="#"><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
+                        <a href="#"><img href="#" src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                        <a href="#"><img href="#" src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                        <a href="#"><img href="#" src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
+                </div>
+                <div class="otherPages">
+                    <a class="navlink" target="_blank" href="assets/bo.jpg">About Us</a>
+                    <span>  </span>
+                    <a class="navlink" target="_blank" href="../readme.md">Events</a>
+                    <span>  </span>
+                    <a class="navlink" target="_blank" href="../readme.md">Nordic Roaster</a>
+                    <span>  </span>
+                    <a class="navlink" target="_blank" href="../readme.md">Results</a>
+                    <span>  </span>
+                    <a class="navlink" target="_blank" href="../readme.md">Links</a>
+                    <span>  </span>
+                    <a class="navlink" target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> Contact</a>
+                </div>
             </div>
-            <div class="otherPages">
-                <a target="_blank" href="assets/bo.jpg">About Us</a>
-                <span>  </span>
-                <a target="_blank" href="../readme.md">Events</a>
-                <span>  </span>
-                <a target="_blank" href="../readme.md">Nordic Roaster</a>
-                <span>  </span>
-                <a target="_blank" href="../readme.md">Results</a>
-                <span>  </span>
-                <a target="_blank" href="../readme.md">Links</a>
-                <span>  </span>
-                <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> Contact</a> 
+        </nav>
+        <div id="headline">
+            <!-- Headlines populated by script.js -->
+        </div>
+
+        <!-- Hidden menus until clicked in mobile format -->
+        <div id="mobile_menu">
+            <div>
+                <a target="_blank" href="assets/bo.jpg"><h2 class="navlink">About Us</h2></a>
+                <a target="_blank" href="../readme.md"><h2 class="navlink">Events</h2></a>
+                <a target="_blank" href="../readme.md"><h2 class="navlink">Nordic Roaster</h2></a>
+                <a target="_blank" href="../readme.md"><h2 class="navlink">Results</h2></a>
+                <a target="_blank" href="../readme.md"><h2 class="navlink">Links</h2></a>
+                <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> <h2 class="navlink">Contact</h2></a>
+            </div>
+            <div id="mobile_icons">
+                <a href="#"><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
+                <a href="#"><img href="#" src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                <a href="#"><img href="#" src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                <a href="#"><img href="#" src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
             </div>
         </div>
+
+        <div id="mobile_search">
+            <div id="searchbar">
+                <img src="assets/icons/search.svg" alt="Search"/>
+                <input type="text" name="searchbar" placeholder="search" oninput="handleSearch(this.value, 'mobile')">
+            </div>
+            <div id="search_results_mobile">
+                <!-- Search results populated here -->
+            </div>
+        </div>
+        <!-- End of hidden mobile sections -->
+
+
+    <main>
+        <div id="overlay" class="overlay_container">
+            <!-- When an article is clicked this container is overlaid to show contents -->
+        </div>
+        <div>
+            <div id="articles">
+            <!-- Article cards are populated by scripts.js -->
+            </div>
+            <hr />
+                <div id="article_pages">
+                    <button id="prev_button" onclick="prevPage(0)">Previous</button>
+                    <div id="pages"></div>
+                    <button id="next_button" onclick="nextPage(0)">Next</button>
+                </div>
+        </div>
+        <div id="sidebar">
+            <div>
+                <h3>WBC Shop</h3>
+                <p>Your shopping car is empty</p>
+                <button>Visit the shop</button>
+            </div>
+            <hr />
+            <div>
+                <h3>Next Event</h3>
+                <h4>World Barista Cup</h4>
+                <p>Copenhagen, Denmark</p>
+                <p>Dates : 25th - 27th August 2011</p>
+                <p>Theme: SENSORY</p>
+                <button>Sign up now</button>
+            </div>
+            <hr />
+            <div>
+                <h3>Scoreboard</h3>
+                <h4>List of winners from last year</h4>
+                <p>2021 - ?</p>
+                <p>2020 - Denmark</p>
+                <p>2019 - Sweden</p>
+                <p>2018 - Italy</p>
+                <p>2017 - Italy</p>
+                <p>2016 - Germany</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="sponsors">
+        <hr />
+        <h3>World Barista Club Sponsors</h3>
+        <div id="sponsors_grid">
+            <!-- sponsors populated here -->
+        </div>
+    </div>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_icons">
+                <img class="footer_logo" src="assets/logo-white.svg" alt="World Barista Cup"/>
+                <div>
+                    <a><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
+                    <a><img src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                    <a><img src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                    <a><img src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
+                </div>
+            </div>
+            <hr />
+            <div id="footer_details">
+                <div>
+                    <h3>About World Barista Cup</h3>
+                    <h6>The vision within The World Barista Cup</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada convallis. Pellentesque nunc nunc, pellentesque vitae commodo nec, rhoncus porttitor libero. Aenean finibus auctor luctus. Vestibulum a mattis tellus. Pellentesque a ligula vitae mi ultricies volutpat. Nunc rutrum tellus a feugiat tincidunt.</p>
+                </div>
+                <div>
+                    <h3>Instagram Feed</h3>
+                    <div id="insta_grid">
+                        <!-- instagram posts populated here -->
+                    </div>
+                </div>
+                <div>
+                    <h3>Contact </h3>
+                    <h4>World Barista Cup</h4>
+                    <h6>Amagertorv 13</h6>
+                    <h6>1160 Copenhagen K</h6>
+                    <h6>+45 33 12 04 28</h6>
+                    <h6>CVR: 11427693</h6>
+                    <h6>Email: info@worldbaristacup.com</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
         <script src="js/scripts.js" type="text/javascript"></script>
+        <script src="js/articles.js" type="text/javascript"></script>
     </body>
-</html>
