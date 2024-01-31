@@ -3,19 +3,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>World Barista Cup</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" >
+        <link rel="stylesheet" href="/src/css/main.css" type="text/css" >
     </head>
     <body>
         <nav>
-            <img src="assets/logo-white.svg" alt="World Barista Cup" class="logo-image"/>
+            <img src="src/assets/logo-white.svg" alt="World Barista Cup" class="logo-image"/>
             <div>
                 <div id="mobileIcons">
-                    <img id="mobile_search_icon" src="assets/icons/search.svg" alt="Search" onclick="toggleMobileSearch()"/>
-                    <img id="menu_button" src="assets/icons/coffee-beans-svgrepo-com.svg" style="filter: invert(100%)" alt="Menu" class="menu_beans" onclick="toggleMenu()"/>
+                    <img id="mobile_search_icon" src="src/assets/icons/search.svg" alt="Search" onclick="toggleMobileSearch()"/>
+                    <img id="menu_button" src="src/assets/icons/coffee-beans-svgrepo-com.svg" style="filter: invert(100%)" alt="Menu" class="menu_beans" onclick="toggleMenu()"/>
                 </div>
                 <div class="searchbarWIcons">
                     <div id="searchbar">
-                        <img src="assets/icons/search.svg" alt="Search"/>
+                        <img src="src/assets/icons/search.svg" alt="Search"/>
                         <input type="text" name="searchbar" placeholder="search" oninput="handleSearch(this.value, 'desktop')">
                     </div>
                     <div id="search_results_desktop">
@@ -23,12 +23,12 @@
                     </div>
                     <!-- Social icons -->
                         <a href="#"><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
-                        <a href="#"><img href="#" src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
-                        <a href="#"><img href="#" src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
-                        <a href="#"><img href="#" src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
+                        <a href="#"><img href="#" src="src/assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                        <a href="#"><img href="#" src="src/assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                        <a href="#"><img href="#" src="src/assets/icons/facebook-white.svg" alt="Facebook"  /></a>
                 </div>
                 <div class="otherPages">
-                    <a class="navlink" target="_blank" href="assets/bo.jpg">About Us</a>
+                    <a class="navlink" target="_blank" href="src/assets/bo.jpg">About Us</a>
                     <span>  </span>
                     <a class="navlink" target="_blank" href="../readme.md">Events</a>
                     <span>  </span>
@@ -49,7 +49,7 @@
         <!-- Hidden menus until clicked in mobile format -->
         <div id="mobile_menu">
             <div>
-                <a target="_blank" href="assets/bo.jpg"><h2 class="navlink">About Us</h2></a>
+                <a target="_blank" href="src/assets/bo.jpg"><h2 class="navlink">About Us</h2></a>
                 <a target="_blank" href="../readme.md"><h2 class="navlink">Events</h2></a>
                 <a target="_blank" href="../readme.md"><h2 class="navlink">Nordic Roaster</h2></a>
                 <a target="_blank" href="../readme.md"><h2 class="navlink">Results</h2></a>
@@ -57,16 +57,16 @@
                 <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> <h2 class="navlink">Contact</h2></a>
             </div>
             <div id="mobile_icons">
-                <a href="#"><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
-                <a href="#"><img href="#" src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
-                <a href="#"><img href="#" src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
-                <a href="#"><img href="#" src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
+                <a href="#"><img src="src/assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
+                <a href="#"><img href="#" src="src/assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                <a href="#"><img href="#" src="src/assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                <a href="#"><img href="#" src="src/assets/icons/facebook-white.svg" alt="Facebook"  /></a>
             </div>
         </div>
 
         <div id="mobile_search">
             <div id="searchbar">
-                <img src="assets/icons/search.svg" alt="Search"/>
+                <img src="src/assets/icons/search.svg" alt="Search"/>
                 <input type="text" name="searchbar" placeholder="search" oninput="handleSearch(this.value, 'mobile')">
             </div>
             <div id="search_results_mobile">
@@ -130,12 +130,12 @@
     <footer>
         <div id="footer_content">
             <div id="footer_icons">
-                <img class="footer_logo" src="assets/logo-white.svg" alt="World Barista Cup"/>
+                <img class="footer_logo" src="src/assets/logo-white.svg" alt="World Barista Cup"/>
                 <div>
-                    <a><img src="assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
-                    <a><img src="assets/icons/twitter-white.svg" alt="Twitter"  /></a>
-                    <a><img src="assets/icons/instagram-white.svg" alt="Instagram"  /></a>
-                    <a><img src="assets/icons/facebook-white.svg" alt="Facebook"  /></a>
+                    <a><img src="src/assets/icons/linkedin-white.svg" alt="Linkedin"  /></a>
+                    <a><img src="src/assets/icons/twitter-white.svg" alt="Twitter"  /></a>
+                    <a><img src="src/assets/icons/instagram-white.svg" alt="Instagram"  /></a>
+                    <a><img src="src/assets/icons/facebook-white.svg" alt="Facebook"  /></a>
                 </div>
             </div>
             <hr />
@@ -163,6 +163,6 @@
             </div>
         </div>
     </footer>
-        <script src="js/scripts.js" type="text/javascript"></script>
-        <script src="js/articles.js" type="text/javascript"></script>
+        <script src="src/js/scripts.js" type="text/javascript"></script>
+        <script src="src/js/articles.js" type="text/javascript"></script>
     </body>

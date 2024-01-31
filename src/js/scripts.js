@@ -65,7 +65,7 @@ function displayHeadines() {
     var imageCount = 1;
 
     var nextButton = document.createElement("div");
-    nextButton.innerHTML = `<img src="assets/icons/arrow-right.svg" alt="next_image" height="20px"/>`;
+    nextButton.innerHTML = `<img src="src/assets/icons/arrow-right.svg" alt="next_image" height="20px"/>`;
     nextButton.onclick = function() {
         imageCount = (imageCount % 3) + 1;
         selectImage();
@@ -73,7 +73,7 @@ function displayHeadines() {
     nextButton.className = 'next_button';
 
     var previousButton = document.createElement("div");
-    previousButton.innerHTML = `<img src="assets/icons/arrow-left.svg" alt="previous_image" height="20px"/>`;
+    previousButton.innerHTML = `<img src="src/assets/icons/arrow-left.svg" alt="previous_image" height="20px"/>`;
     previousButton.onclick = function() {
         imageCount = ((imageCount + 1) % 3) + 1;
         selectImage();
@@ -92,15 +92,15 @@ function displayHeadines() {
     /* FUNCTIONS */
     function selectImage() {
         if (imageCount === 1) {
-            image.src = "assets/images/main/pexels-chevanon-photography-302897.jpg";
+            image.src = "src/assets/images/main/pexels-chevanon-photography-302897.jpg";
             image.alt = "headline-image-1";
             text.innerHTML = `"To create an environment in which knowledge about coffee and its sphere can be obtained"`;
         } else if (imageCount === 2) {
-            image.src = "assets/images/main/pexels-juan-pablo-serrano-arenas-894695.jpg";
+            image.src = "src/assets/images/main/pexels-juan-pablo-serrano-arenas-894695.jpg";
             image.alt = "headline-image-2";
             text.innerHTML = `"This is a great introduction to the coffee industry's best beans on the planet"`;
         } else if (imageCount === 3) {
-            image.src = "assets/images/main/pexels-chevanon-photography-323503.jpg";
+            image.src = "src/assets/images/main/pexels-chevanon-photography-323503.jpg";
             image.alt = "headline-image-3";
             text.innerHTML = `"Coffee in, code out, this is the way of eternal life and empowerment of the soul"`;
         }
@@ -131,7 +131,7 @@ function toggleOverlay(article) {
                 </div>
             </div>
             <div>
-                <img class="close_button" src="assets/icons/close.svg" alt="close" onclick="toggleOverlay()"/>
+                <img class="close_button" src="src/assets/icons/close.svg" alt="close" onclick="toggleOverlay()"/>
             </div>
         `;
         overlay.innerHTML = ""; // Clear previous content
@@ -155,7 +155,7 @@ function displaySponsors() {
         var sponsorDiv = document.getElementById('sponsors_grid')
         var sponsor = document.createElement("img")
         try {
-            sponsor.src = `assets/images/sponsors/sponsor-${i}.png`;
+            sponsor.src = `src/assets/images/sponsors/sponsor-${i}.png`;
             sponsor.onload = () => {
                 sponsorDiv.append(sponsor)
             }
@@ -178,7 +178,7 @@ function displayInstas() {
     function displayInsta(i) {
         var instaDiv = document.getElementById('insta_grid')
         var insta = document.createElement("img")
-        insta.src = `assets/images/instagram-feed/instagram-image-${i}.png`;
+        insta.src = `src/assets/images/instagram-feed/instagram-image-${i}.png`;
         // If the file exists, display the image
         insta.onload = () => {
             instaDiv.append(insta)
@@ -313,10 +313,10 @@ function toggleMenu() {
     // Toggle the button icon (filter used to make coffee beans logo white)
     if (menuButton.src.endsWith('coffee-beans-svgrepo-com.svg')) {
         menuButton.classList.toggle('spin');
-        menuButton.src = 'assets/icons/close.svg';
+        menuButton.src = 'src/assets/icons/close.svg';
         menuButton.style.filter = "none";
     } else {
-        menuButton.src = 'assets/icons/coffee-beans-svgrepo-com.svg';
+        menuButton.src = 'src/assets/icons/coffee-beans-svgrepo-com.svg';
         menuButton.style.filter = "invert(100%)"
     }
 }

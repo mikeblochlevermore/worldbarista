@@ -2,7 +2,7 @@
 
 const articles = [
     new Article(
-        'assets/images/posts/Post thumbnail-4.png',
+        'src/assets/images/posts/Post thumbnail-4.png',
         'Wonderful Copenhagen 2021',
         '12/07/2021',
         `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada convallis. Pellentesque nunc nunc, pellentesque vitae commodo nec, rhoncus porttitor libero. Aenean finibus auctor luctus. Vestibulum a mattis tellus. Pellentesque a ligula vitae mi ultricies volutpat. Nunc rutrum tellus a feugiat tincidunt. Nulla faucibus turpis sit amet nunc suscipit aliquam. Cras dignissim massa dui, ac ornare lectus iaculis eu. Nam viverra, dolor at porttitor consectetur, turpis felis ultrices lacus, sed molestie metus mauris eu mauris. Suspendisse eu commodo urna. Pellentesque posuere gravida nisl non finibus.</p>
@@ -12,7 +12,7 @@ const articles = [
         <p>Etiam aliquam imperdiet orci, in ornare purus. Vivamus sed tellus et diam sagittis luctus. Integer tellus turpis, suscipit a dapibus blandit, efficitur vitae tortor. Aenean vulputate, felis sit amet dignissim condimentum, est elit tincidunt diam, interdum congue neque nisl sed quam. Aenean vel lacinia sem. Aenean non ligula auctor, volutpat odio non, aliquet augue. Aliquam rhoncus id orci eu rutrum. Nunc ultrices arcu vitae ligula convallis consequat. Aliquam tincidunt imperdiet dui nec bibendum. Curabitur facilisis interdum erat, ut rutrum turpis. Quisque in enim enim. Proin convallis elit non nulla mattis, non dignissim elit porttitor. Duis vel quam tincidunt, porta nisl non, pretium nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus scelerisque tortor at ipsum tincidunt ultricies.</p>`
     ),
     new Article(
-        'assets/images/posts/Post thumbnail-1.png',
+        'src/assets/images/posts/Post thumbnail-1.png',
         'The Most Expensive Coffee on the Market',
         '12/07/2021',
         `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada convallis. Pellentesque nunc nunc, pellentesque vitae commodo nec, rhoncus porttitor libero. Aenean finibus auctor luctus. Vestibulum a mattis tellus. Pellentesque a ligula vitae mi ultricies volutpat. Nunc rutrum tellus a feugiat tincidunt. Nulla faucibus turpis sit amet nunc suscipit aliquam. Cras dignissim massa dui, ac ornare lectus iaculis eu. Nam viverra, dolor at porttitor consectetur, turpis felis ultrices lacus, sed molestie metus mauris eu mauris. Suspendisse eu commodo urna. Pellentesque posuere gravida nisl non finibus.</p>
@@ -23,7 +23,7 @@ const articles = [
     ),
 
     new Article(
-        'assets/images/posts/Post thumbnail-2.png',
+        'src/assets/images/posts/Post thumbnail-2.png',
         '10 Types of Coffee Bean You Need to Know',
         '12/07/2021',
         `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada convallis. Pellentesque nunc nunc, pellentesque vitae commodo nec, rhoncus porttitor libero. Aenean finibus auctor luctus. Vestibulum a mattis tellus. Pellentesque a ligula vitae mi ultricies volutpat. Nunc rutrum tellus a feugiat tincidunt. Nulla faucibus turpis sit amet nunc suscipit aliquam. Cras dignissim massa dui, ac ornare lectus iaculis eu. Nam viverra, dolor at porttitor consectetur, turpis felis ultrices lacus, sed molestie metus mauris eu mauris. Suspendisse eu commodo urna. Pellentesque posuere gravida nisl non finibus.</p>
@@ -34,7 +34,7 @@ const articles = [
     ),
 
     new Article(
-        'assets/images/posts/Post thumbnail-3.png',
+        'src/assets/images/posts/Post thumbnail-3.png',
         'Challenge Your Barista Skills to the Max',
         '12/07/2021',
         `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada convallis. Pellentesque nunc nunc, pellentesque vitae commodo nec, rhoncus porttitor libero. Aenean finibus auctor luctus. Vestibulum a mattis tellus. Pellentesque a ligula vitae mi ultricies volutpat. Nunc rutrum tellus a feugiat tincidunt. Nulla faucibus turpis sit amet nunc suscipit aliquam. Cras dignissim massa dui, ac ornare lectus iaculis eu. Nam viverra, dolor at porttitor consectetur, turpis felis ultrices lacus, sed molestie metus mauris eu mauris. Suspendisse eu commodo urna. Pellentesque posuere gravida nisl non finibus.</p>
