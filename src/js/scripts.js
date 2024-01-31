@@ -265,6 +265,7 @@ function updatePage(page) {
 function handleSearch(input, resolution) {
 
     resultsDiv = document.getElementById(`search_results_${resolution}`);
+    resultsDiv.style.display = 'block'
     resultsDiv.innerHTML = '';
 
     if (input != '') {
@@ -299,7 +300,7 @@ function handleSearch(input, resolution) {
     }
 
     document.addEventListener("click", () => {
-        resultsDiv.innerHTML = '';
+        resultsDiv.style.display = 'none'
     });
 }
 
