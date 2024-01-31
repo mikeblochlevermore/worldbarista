@@ -158,6 +158,7 @@ a {
     background-color: #000000;
     top: 35;
     padding: 10px;
+    width: 100%;
 }
 
 .result {
