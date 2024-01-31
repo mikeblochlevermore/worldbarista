@@ -26,7 +26,7 @@ nav {
     display: none;
     background: black;
     top: 110px;
-    width: 100vw;
+    width: 100%;
     color: white;
     position: absolute;
     gap: 40px;
@@ -61,7 +61,7 @@ nav {
     display: none;
     background: black;
     top: 110px;
-    width: 100vw;
+    width: 100%;
     color: white;
     position: absolute;
     gap: 40px;
@@ -222,8 +222,6 @@ height: 12px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .headline-image {
@@ -558,7 +556,6 @@ footer {
         position: absolute;
         color: white;
         background-color: #131313;
-        width: 70%;
         text-align: center;
         padding: 40px 60px 40px 60px;
         left: 50%;
@@ -606,5 +603,8 @@ footer {
     }
     #mobileIcons {
         gap: 20px;
+    }
+    .footer_logo{
+        height: 30px;
     }
 }
